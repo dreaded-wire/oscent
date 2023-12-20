@@ -1,18 +1,19 @@
 from clear_module import clear_screen
-
-class Email:
+class Email: # Initialize object
     def __init__(self, email=""):
         self.email = email
 
-    def update_info(self):
+    def update_info(self): # Method to assign values to attributes of the Email class
         clear_screen()
         raw_email = input("Enter Email: ")
         self.email = raw_email
 
-    def display_info(self):
+    def display_info(self): # Method to display values of the attributes of the Email class
         clear_screen()
         info = f"Email: {self.email}\n"
         print(info)
+
+# Everything past this point is URL generation -->
 
     def generate_thatsthem_url(self):
         if '@' not in self.email:
