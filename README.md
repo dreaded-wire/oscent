@@ -14,10 +14,15 @@ Modular Structure: The tool is organized into modules for different types of inf
 Oscent's command line interface provides a straightforward way to interact with the tool. Users can choose from the following options:
 
 1 for persons
+
 2 for addresses
+
 3 for phone numbers
+
 4 for usernames
+
 5 for emails
+
 6 for IP addresses
 
 # Contributing
