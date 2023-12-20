@@ -1,25 +1,27 @@
 from clear_module import clear_screen
-class StreetAddress:
+class StreetAddress: # Initialize object
     def __init__(self):
         self.street = ""
         self.zip = ""
         self.state = ""
         self.city = ""
 
-    def update_info(self):
+    def update_info(self): # Method to assign values to attributes of the StreetAddress class
         clear_screen()
         self.street = input("Street: ")
         self.zip = input("ZIP Code: ")
         self.state = input("State: ")
         self.city = input("City: ")
 
-    def display_info(self):
+    def display_info(self): # Method to display values of the attributes of the StreetAddress class
         clear_screen()
         info = f"Street: {self.street}\n"\
                f"ZIP Code: {self.zip}\n"\
                f"State: {self.state}\n"\
                f"City: {self.city}\n\n"
         print(info)
+
+# Everything past this point is URL generation -->
 
     def generate_truepeoplesearch_url(self):
         if self.street and ((self.city and self.state) or self.zip):
