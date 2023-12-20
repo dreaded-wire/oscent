@@ -1,5 +1,6 @@
 # oscent
 ![oscent](https://github.com/dreaded-wire/oscent/assets/129433129/dc0ab68f-0e0d-42ca-a011-4b00560dce42)
+
 Python3 CLI OSINT tool for people, phone numbers, addresses, emails, usernames, and IP's
 
 Oscent is a powerful OSINT tool that simplifies the process of gathering intelligence from various online sources. It provides a user-friendly command line interface for generating targeted URLs based on specific parameters. Oscent supports offline usage, allowing users to prepare OSINT activities without internet access. It is intended for private investigators, skiptracers, curious individuals, and anyone interested in the field of OSINT!
