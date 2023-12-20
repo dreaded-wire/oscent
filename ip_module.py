@@ -1,19 +1,20 @@
-import ipaddress
+import ipaddress # Library used to check IP address validity
 from clear_module import clear_screen
-
-class IP:
+class IP: # Initialize object
     def __init__(self, ip_address=""):
         self.ip_address = ip_address
 
-    def update(self):
+    def update(self): # Method to assign values to attributes of the IP class
         clear_screen()
         raw_ip = input("Enter IP Address: ")
         self.ip_address = raw_ip
 
-    def display(self):
+    def display(self): # Method to display values of the attributes of the IP class
         clear_screen()
         info = f"IP Address: {self.ip_address}\n"
         print(info)
+
+# Everything past this point is URL generation -->
 
     def generate_whatismyipaddress(self):
         try:
