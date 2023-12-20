@@ -1,6 +1,5 @@
 from clear_module import clear_screen
-
-class Person:
+class Person: # Initialize object
     def __init__(self, first_name="", mid_name="", last_name="", zip_code="", state="", city="", age="", county="", street_address=""):
         self.firstName = first_name
         self.midName = mid_name
@@ -12,7 +11,7 @@ class Person:
         self.county = county
         self.street_address = street_address
 
-    def update_info(self):
+    def update_info(self): # Method to assign values to attributes of the Person class
         clear_screen()
         self.firstName = input("First Name: ")
         self.midName = input("Middle Name: ")
@@ -24,7 +23,7 @@ class Person:
         self.street_address = input("Street Address: ")
         self.age = input("Age: ")
 
-    def display_info(self):
+    def display_info(self): # Method to display values of the attributes of the Person class
         clear_screen()
         info = f"First Name: {self.firstName}\n"\
                f"Middle Name: {self.midName}\n"\
@@ -36,6 +35,8 @@ class Person:
                f"Street Address: {self.street_address}\n"\
                f"Age: {self.age}\n"
         print(info)
+
+# Everything past this point is URL generation -->
 
     def generate_thatsthem_url(self):
         name_parts = []
