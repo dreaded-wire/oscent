@@ -1,16 +1,18 @@
 from clear_module import clear_screen
-class Username:
+class Username: # Initialize object
     def __init__(self, username=""):
         self.username = username
 
-    def update_info(self):
+    def update_info(self): # Method to assign values to attributes of the Username class
         clear_screen()
         self.username = input("Username: ")
 
-    def display_info(self):
+    def display_info(self): # Method to display values of the attributes of the Username class
         clear_screen()
         info = f"Username: {self.username}\n"
         print(info)
+
+# Everything past this point is URL generation -->
 
     def generate_idcrawl_url(self):
         if self.username:
