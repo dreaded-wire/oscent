@@ -28,13 +28,13 @@ while True:
         # Create a Person object
         person = Person()
 
-        # Update information based on user input
+        # Update information
         person.update_info()
 
         # Display updated information
         person.display_info()
 
-        # Generate and display both URLs
+        # Generate and display persons URLs
         thatsthem = person.generate_thatsthem_url()
         truepeoplesearch = person.generate_truepeoplesearch_url()
         four = person.generate_411_url()
@@ -49,16 +49,16 @@ while True:
         print(four)
         input("\nPress enter to continue: ")
     elif choice == "2":
-        # Use the StreetAddress class from the address_module
+        # Create a StreetAddress object
         street_address = StreetAddress()
 
-        # Update information based on user input
+        # Update information
         street_address.update_info()
 
         # Display updated information
         street_address.display_info()
 
-        # Generate and display the TruePeopleSearch.com and ThatsThem.com URL for street address
+        # Generate and display address URLs
         truepeoplesearch = street_address.generate_truepeoplesearch_url()
         thatsthem = street_address.generate_thatsthem_url()
         zillow = street_address.generate_zillow_url()
@@ -66,7 +66,7 @@ while True:
         print(truepeoplesearch)
         print(thatsthem)
         input("\nPress enter to continue: ")
-    elif choice == "3":  # Handle the option for Phone Number
+    elif choice == "3":
         # Create a PhoneNumber object
         phone_number = PhoneNumber()
 
@@ -76,7 +76,7 @@ while True:
         # Display updated information
         phone_number.display_info()
 
-        # Generate and display phone-related URLs
+        # Generate and display phone URLs
         truepeoplesearch = phone_number.generate_truepeoplesearch_url()
         four = phone_number.generate_411_url()
         thatsthem = phone_number.generate_thatsthem_url()
@@ -99,7 +99,7 @@ while True:
         input("\nPress enter to continue: ")
 
     elif choice == "4":
-        # Create username object
+        # Create Username object
         username = Username()
 
         # Update information
@@ -108,7 +108,7 @@ while True:
         # Display updated informaion
         username.display_info()
 
-        # Generate and display username-related URLs
+        # Generate and display username URLs
         idcrawl = username.generate_idcrawl_url()
         uvrX = username.generate_uvrX_url()
 
@@ -117,16 +117,16 @@ while True:
         input("\nPress enter to continue: ")
 
     elif choice == "5":
-       # Create email object
+       # Create Email object
        email = Email()
 
-       # Update Information
+       # Update information
        email.update_info()
 
        # Display updated information
        email.display_info()
 
-       # Generate and display email-related URLs
+       # Generate and display email URLs
        thatsthem = email.generate_thatsthem_url()
        truepeoplesearch = email.generate_truepeoplesearch_url()
        hunter = email.generate_hunter_io_url()
@@ -139,13 +139,13 @@ while True:
         # Create IP object
         ip = IP()
 
-        # Update Information
+        # Update information
         ip.update()
 
         # Display updated information
         ip.display()
 
-        # Generate and display ip-related URLs
+        # Generate and display ip URLs
         whatis = ip.generate_whatismyipaddress()
         mx = ip.generate_mxtoolbox()
         thatsthem = ip.generate_thatsthem()
@@ -158,6 +158,6 @@ while True:
         print(keycdn)
         print(geo)
         input("\nPress enter to continue: ")
-    else:
+    else: # Error handler
         clear_screen()
         print("Invalid choice.")
