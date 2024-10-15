@@ -34,3 +34,4 @@ I welcome contributions to enhance Oscent! If you have ideas, new sources, bug f
 
 # To-Do
 1. Transfrom this project into a web scraper
+2. Add support for domain based intelligence
