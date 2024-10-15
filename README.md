@@ -31,3 +31,6 @@ Oscent's command line interface provides a straightforward way to interact with 
 
 # Contributing
 I welcome contributions to enhance Oscent! If you have ideas, new sources, bug fixes, or new features, please submit a pull request.
+
+# To-Do
+1. Transfrom this project into a web scraper
