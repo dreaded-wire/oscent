@@ -14,6 +14,8 @@ Offline Usage: Oscent is designed to operate offline, ensuring privacy and enabl
 
 Modular Structure: The tool is organized into modules for different types of information, promoting a clean and modular codebase. Each module handles specific data types, such as persons, addresses, and more.
 
+Library Independent: Oscent is ready out the box, no pip installations needed!
+
 # Usage
 `python3 main.py`
 
